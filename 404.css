@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #22232e;
+  font-family: 'Poppins', sans-serif;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.col-md-6{
+  width: 50%;
+}
+.wrapper{
+  min-width: 720px;
+}
+.error-box{
+  display: block;
+  padding: 70px 80px;
+}
+.error-box h2{
+  color: #00c2cb;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.error-box p{
+  font-family: 'Jost',sans-serif;
+  font-size: 18px;
+  line-height: 1.6rem;
+  color: #e0ffff;
+  margin-bottom: 15px;
+}
+.error-box .input-box{
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.error-box .input-box input{
+  width: 85%;
+  height: 42px;
+  padding: 7px 15px;
+  font-family: 'Jost',sans-serif;
+  font-size: 16px;
+  color: #22232e;
+  border-radius: 5px 0px 0px 5px;
+  border: 2px solid #42455a;
+}
+.error-box .input-box input:focus{
+  outline: none;
+  border-color: #e0ffff;
+}
+.error-box .input-box button{
+  display: flex;
+  width: 15%;
+  border: 1px solid #004958;
+  border-radius: 0px 5px 5px 0px;
+  background: #004958;
+  color: #e0ffff;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.error-box .cta-btn{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 16px;
+  background: #004958;
+  color: #e0ffff;
+  padding: 10px 24px;
+  border-radius: 15px 15px 0px 15px;
+  margin-top: 40px;
+  align-items: center;
+}
+.error-box .cta-btn:hover{
+  background: #004453;
+  transform: scale(1.03);
+  color: #fff;
+}
+.error-box .cta-btn i{
+  font-size: 18px;
+  margin-right: 10px;
+}
+.error-img{
+  width: 420px;
+  background: #262731;
+  border-radius: 47% 53% 67% 45% / 49% 50% 50% 51%;
+}
+.box-area{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+@media screen and (max-width:600px){
+  .row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .col-md-6{
+    width: 100%;
+  }
+  .wrapper{
+    min-width: 200px;
+    padding: 40px 0px;
+  }
+  .error-box{
+    display: block;
+    padding: 20px 40px;
+    width: 100%;
+  }
+  .error-img{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
